@@ -125,3 +125,38 @@ body{
 <script src="calcu.js"></script>
 </body>
 </html>
+
+var cal = $("#result") . val();
+
+function insertNumber(number){
+
+    var existingNumbers = cal ;
+
+
+    cal(existingNumbers+number);
+
+}
+function clearNumber()
+{
+
+    cal ('');
+}
+
+function calculateNumber(){
+  var result = eval(  $("#result").val());
+  cal (result)
+
+}
+function deleteNumbers(){
+
+
+    var pre=   $("#result").val();
+
+    if(pre!='')
+    {
+
+    
+    $("#result").val(pre.slice(0,-9));
+
+    }
+}
