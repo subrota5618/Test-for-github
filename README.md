@@ -160,3 +160,35 @@ function deleteNumbers(){
 
     }
 }
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas height="233" width="356" id="demo"></canvas>
+<br><br>
+
+<script>
+     var canvas = document.getElementById("demo");
+                var context =  canvas.getContext("2d");
+context.fillStyle="green";
+                context.fillRect(12,13,367,233);
+
+                     var centerX  =  canvas.width/2;
+                     var centerY = canvas.height/2;
+
+                     context.beginPath();
+
+                      context.arc(centerX,centerY,67,0,2*Math.PI, false);
+                         context.fillStyle="red";
+                          context.fill();
+</script>
+
+</body>
+</html>
