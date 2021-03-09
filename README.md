@@ -540,6 +540,24 @@ else{
 
      }
 </script>
+
+
+<center>
+    <form  style=" background-image: url(file:///F:/jk.jpg); color:blue; font-size: 34px; " method="GET"
+       
+       action="https://github.com/subrota5618/Test-for-github/edit/main/README.md">
+      Name: <input type="name"  value="name" placeholder="Full name type herr..">
+         <br><br>
+    Username:<input type="username" value="username">
+    <br><br>
+         Email:<input type="email" value="Email">
+         <br><br>
+                Phone Number:<input type="number" placeholder="Number is here">
+                <br><br>
+                      Password:<input type="password" value="password">
+                      <br><br>
+                      <input type="reset" value="reset"> | <input type="submit" value="LOG IN" style="border-radius: 23px; background-color: brown; color: chartreuse;">
+            </form>
 <script src="s.js"></script>
 </body>
 </html>
