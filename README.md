@@ -734,3 +734,1460 @@ PHP end here........................
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <... php.....>
+
+     <html>
+     <head>
+     <title>My Database</title>
+     </head>
+     <body>
+      <h1>show my database</h1>
+     </body>
+     </html>
+     <?php
+     
+     $con= mysql_connect("localhost", "root", "");
+     $connection= mysql_select_db("key", $con);
+     
+     
+     
+     ?>
+     <.....END PHP.......>
+     <...JS start....>
+     <script>
+     /*
+     wonNumber = 0;
+     lostNumber = 0 ;
+     
+     for(i=1; i<=5; i++)
+     {
+          var guseNumber = parseInt(prompt("Enter the number 1 to 5"));
+     
+          var randomNumber = Math.floor(Math.random()*5)+1;
+     
+     
+     if(guseNumber==randomNumber)
+     {
+     
+          document.write("You have won <br>");
+     
+     
+          wonNumber++;
+     
+     
+     
+     }
+     
+     
+     else{
+          document.write("You have lost the random number was=" +randomNumber+ "<br>");
+     }
+     
+     lostNumber++;
+     
+     
+        }
+     
+        document.write("You have won for =" +wonNumber  +"<br><br>");
+     
+        document.write("You have lost for =" +lostNumber  +"<br>");*/
+     
+     let data =()=>{
+          console.log("Data Loading");
+     }
+        let task1 = (callback) =>{
+             console.log("Harry");
+               setTimeout(data,000);
+        callback();
+          }
+     
+        let task2 = (callback) =>{
+          console.log("Alex");
+      callback();
+     }
+     
+     let task3 = (callback) =>{
+          console.log("David");
+      callback();
+     }
+     let task4 = (callback) =>{
+       console.log("William");
+     callback();
+     }
+     let task5 = (callback) =>{
+       console.log("Json");
+     callback();
+     }
+     let task6 = (callback) =>{
+       console.log("Nikki");
+     callback();
+     }
+     let task7 = (callback) =>{
+       console.log("Kipria");
+     callback();
+     }
+     let task8 = (callback) =>{
+       console.log("Adam");
+     callback();
+     }
+     let task9 = (callback) =>{
+       console.log("Admon");
+     callback();
+     }
+     let task10 = (callback) =>{
+       console.log("Smith");
+     callback();
+     }
+     let task11 = (callback) =>{
+       console.log("Gail");
+     callback();
+     }
+     //dont need to say callback this is last....>
+     
+     let task12 = () =>{
+       console.log("Harry");
+     }
+     //callback
+     task1(function f1(){
+          task2(function f2(){
+               task3(function f3(){
+                    task4(function f4(){
+                         task5(function f5(){
+                              task6(function f6(){
+                                   task7(function f7(){
+                                          task8(function f8(){
+                                               task9(function f9(){
+                                                    task10(function f10(){
+                                                         task11(function(){
+                                                              task12();
+                                                                    //Nested Loops is here...>
+                                                         })
+                                                    })
+                                               })
+                                          })
+                                   })
+                              })
+                         })
+                    })
+               })
+          });
+     });
+     
+     let promise1 = new Promise ((resolve,reject)=>{
+          let completed = true;
+              if(completed){
+                   setTimeout(()=>{
+                    resolve("Has been completed...");
+                   })
+     
+              }
+                   else{
+                        setTimeout(()=>{
+                         reject("You should more and more practice take about it..");
+                        })
+     
+                   }
+     }) ;
+     
+     promise1.then((res)=>{
+          console.log(res);
+     });
+     
+     let promise2= new Promise ((resolve,reject)=>{
+          let completed = true;
+              if(completed){
+                   setTimeout (()=>{
+     
+                   resolve("Has been completed...");
+                   },1000)
+     
+     
+     
+              }
+                   else{
+                        setTimeout (()=>{
+                         reject("You should more and more practice take about it..");
+     
+                        },2000)
+                   }
+     }) ;
+     
+     promise2.then((res)=>{
+          console.log(res);
+     });
+     
+     let promise3 = new Promise ((resolve,reject)=>{
+          let completed = true;
+              if(completed){
+                   setTimeout(()=>{
+                    resolve("Has been completed...");
+                   })
+     
+              }
+                   else{
+                        setTimeout(()=>{
+                         reject("You should more and more practice take about it..");
+                        })
+     
+                   }
+     }) ;
+     
+     promise3.then((res)=>{
+          console.log(res);
+     });
+     
+     let promise4 = new Promise ((resolve,reject)=>{
+          let completed = true;
+              if(completed){
+                   setTimeout (()=>{
+     
+                   resolve("Has been completed...");
+                   },1000)
+     
+     
+     
+              }
+                   else{
+                        setTimeout (()=>{
+                         reject("You should more and more practice take about it..");
+     
+                        },2000)
+                   }
+     }) ;
+     
+     promise4.then((res)=>{
+          console.log(res);
+     });
+     
+     promise4.catch((error)=>{
+          console.log(error);
+     });
+     promise3.then((res)=>{
+          console.log(res);
+     });
+     
+     promise3.catch((error)=>{
+          console.log(error);
+     });
+           console.log("Pass the all prametar...")
+     Promise.race([promise1,promise2,promise3,promise4]).then((res)=>
+     {
+     console.log(res);
+     
+     });
+     //break
+     
+     var t1 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it..");
+            },1000)
+          })
+     }
+     
+     
+     var t2= ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it2..");
+            },1000)
+          })
+     }
+     
+     var t3 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it3..");
+            },1000)
+          })
+     }
+     
+     var t4 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it4..");
+            },1000)
+          })
+     }
+     
+     var t5 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it all..");
+            },1000)
+          })
+     }
+     
+     var t6 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it6..");
+            },1000)
+          })
+     }
+     
+     var t7 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it7..");
+            },1000)
+          })
+     }
+     
+     var t8 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it8..");
+            },1000)
+          })
+     }
+     
+     var t9 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it9..");
+            },1000)
+          })
+     }
+     
+     var t10 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it10..");
+            },1000)
+          })
+     }
+     
+     var t11 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    reject("I am reject this project right now to postpone the next time..");
+            },1000)
+          })
+     }
+     
+     var t12 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it12..");
+            },1000)
+          })
+     }
+     
+     var t13 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it..13");
+            },1000)
+          })
+     }
+     
+     var t14 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it14..");
+            },1000)
+          })
+     }
+     
+     var t15 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it15..");
+            },1000)
+          })
+     }
+     
+     var t16 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it16..");
+            },1000)
+          })
+     }
+     
+     var t17 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it monotonious..");
+            },1000)
+          })
+     }
+     
+     var t18= ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it18..");
+            },1000)
+          })
+     }
+     
+     
+     var t19= ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it 19..");
+            },1000)
+          })
+     }
+     
+     var t20 = ()=>{
+          return new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    resolve("I can do it  20 ..");
+            },1000)
+          })
+     }
+     
+     t1().then((res)=>{
+             console.log(res);
+     })
+     t2().then((res)=>{
+          console.log(res);
+     
+     })
+     t3().then((res)=>{
+          console.log(res);
+     })
+     t4().then((res)=>{
+          console.log(res);
+     })
+     t15().then((res)=>{
+          console.log(res);
+     })
+     t6().then((res)=>{
+          console.log(res);
+     })
+     t7().then((res)=>{
+          console.log(res);
+     })
+     t8().then((res)=>{
+          console.log(res);
+     })
+     t9().then((res)=>{
+          console.log(res);
+     })
+     t10().then((res)=>{
+          console.log(res);
+     })
+     t11().then((res)=>{
+          console.log(res);
+     })
+     t12().then((res)=>{
+          console.log(res);
+     })
+     
+     t13().then((res)=>{
+          console.log(res);
+     })
+     t14().then((res)=>{
+          console.log(res);
+     })
+     t15().then((res)=>{
+          console.log(res);
+     })
+     t16().then((res)=>{
+          console.log(res);
+     })
+     t17().then((res)=>{
+          console.log(res);
+     })
+     t18().then((res)=>{
+          console.log(res);
+     })
+     
+     t19().then((res)=>{
+          console.log(res);
+     })
+     
+     t20().then((res)=>{
+          console.log(res);
+     })
+     
+     .catch((err)=>{
+          console.log(err);
+     })
+     
+     
+     
+     var ta2 = ()=>{
+          return  new Promise ((resolve,reject)=>{
+               setTimeout(()=>{
+                    let po = true; // cond for sim mai:
+                    if(po){
+                    resolve ("This is me");
+                    }
+                       else{   
+                              reject("Hi nana ...");
+                       }
+               },1000);
+          
+          });
+          }
+     var ta3 = ()=>{
+     return  new Promise ((resolve,reject)=>{
+          setTimeout(()=>{
+               let po = true;
+               if(po){
+               resolve ("This is me");
+               }
+                  else{   
+                         reject("Hi nana ...");
+                  }
+          },1000);
+     
+     });
+     }
+     
+     
+          var ta4= ()=>{
+               return  new Promise ((resolve,reject)=>{
+                    setTimeout(()=>{
+                         let po = true;
+                         if(po){
+                         resolve ("This is me 3");
+                         }
+                            else{   
+                                   reject("Hi nana ...");
+                            }
+                    },1000);
+               
+               });
+               }
+               
+               var ta5 = ()=>{
+                    return  new Promise ((resolve,reject)=>{
+                         setTimeout(()=>{
+                              let po = true;
+                              if(po){
+                              resolve ("This is me 4");
+                              }
+                                 else{   
+                                        reject("Hi nana ...");
+                                 }
+                         },1000);
+                    
+                    });
+                    }
+                    
+                    var ta5 = ()=>{
+                         return  new Promise ((resolve,reject)=>{
+                              setTimeout(()=>{
+                                   let po = true;
+                                   if(po){
+                                   resolve ("This is me 5");
+                                   }
+                                      else{   
+                                             reject("Hi nana ...");
+                                      }
+                              },1000);
+                         
+                         });
+                         }
+                         
+                         var ta6 = ()=>{
+                              return  new Promise ((resolve,reject)=>{
+                                   setTimeout(()=>{
+                                        let po = true;
+                                        if(po){
+                                        resolve ("This is me last  ......");
+                                        }
+                                           else{   
+                                                  reject("Hi nana ...");
+                                           }
+                                   },7000);
+                              
+                              });
+                              }
+                              
+                                                                                
+     /*
+     ta3().then((res)=>{
+         console.log(res)
+     })
+     
+     */
+     /*
+     async function pot6(){
+          let you6 = await ta6();
+          console.log(you6);
+        
+        }
+          pot6();
+     
+     async function pot2(){
+          let you2 = await ta2();
+          console.log(you2);
+        
+        }
+          pot2();
+     
+     async function pot3(){
+       let you3 = await ta3();
+       console.log(you3);
+     
+     }
+       pot3();
+     
+      
+     async function pot4(){
+         
+     
+        }
+      pot4();
+     */     
+     async function pot5(){
+          let you2 = await ta2(ta3);
+          console.log(you2);
+      
+          let you5 = await ta5(ta4);
+          console.log(you5);
+          let you4= await ta4();
+          console.log(you4);
+          let you6 = await ta6();
+          console.log(you6);
+          let you3 = await ta3();
+          console.log(you3);
+        }
+          pot5();
+          
+
+
+
+          
+/*reverse number start from here*/
+     var poinst =[9,8,7,6,5,4,3,2,1];
+               document.getElementById("demo").innerHTML=9,8,7,6,5,4,3,2,1;
+
+             function  myFunc()
+             {
+points.sort();
+
+
+document.getElementById("demo").innerHTML=poinst;
+
+ points.reverse();
+                    }
+               </script>
+
+
+                    /*reverse number end from here*/
+    
+
+<br>        <br>
+  <br>
+<div  id="demo2" style="height:233px; width:233px; background-color: blueviolet;">
+
+Hello I can hide and show.
+</div>
+<button onclick=" show()">Show</button>
+<button onclick="hide()">Hide</button>
+
+<script>
+//hide and show function start from here//
+function show()
+{
+document.getElementsById("demo2").style.display="block";
+
+
+}
+function hide()
+{
+document.getElementsById("demo2").style.display="none";
+
+
+}
+
+//hide and show function end from here//
+
+
+
+  
+
+          var i =5;
+
+          var sum = 0;
+
+          while(i<23)
+          {
+               document.write(i+ "<br>");
+
+               i++;
+
+               sum = sum + i;
+          }
+
+          document.write("The while loop additation ="+sum + "<br><br>");
+     
+
+
+  
+
+   
+          //For loop
+var sum = 0;
+
+          for(i=0; i<23; i++)
+
+          {
+
+               document.write(i  +"<br>");
+
+               math = sum+i;
+          }
+
+          document.write(math);
+   
+ 
+
+
+  for( i=0; i<=34;  i++)
+  {
+       document.write("hello <br><br>");
+
+  }
+
+
+
+
+
+
+     var lostNumber =0;
+     var wonNumber =0;
+
+     for(i=1; i<8; i++){
+
+          var gusseingNumber = parseInt(prompt("Enter the number between 1 to 8"));
+                     var randomNumber = Math.floor(Math.random()*8)+1;
+
+                      if(gusseingNumber==randomNumber){
+       document.write("You have won=" +wonNumber  +"<br><br>");
+     wonNumber++;
+
+                          }
+
+                                   else {
+
+                                        document.write("You have lost the random number was="  +randomNumber+ "<br><br>");
+                                                lostNumber++;
+                                   }
+
+                            }
+
+                            document.write("You have lost for =" +lostNumber+ "<br><br>" )  ;
+                                  document.write("You have won for  = " +wonNumber + "<br>");
+
+
+<i style="color: rosybrown;">Hello Programer...</i>
+
+     var  sum =0;
+     //Conditional Loop
+     for(i=1; i<23; i++){
+          document.write("<br><br>  " +i);
+          sum = sum+i;
+     }
+     document.write("<br> Tho for Loop additation=>" +sum );
+
+<i>Hello While Loop</i>
+
+     var sum = 0 ;
+     var i = 1 ;
+
+     //while Loop
+
+      while(i<23)
+      {
+document.write("<br>" + i);
+i++;
+
+sum = sum+i;
+      }
+
+               document.write("<br> Hello I am additation="+sum)
+
+
+
+<br>
+<i>Do While</i>
+     var sum = 0 ;
+     var i = 1 ;
+
+     //while Loop
+
+    do  {
+document.write("<br>" + i);
+i++;
+
+sum = sum+i;
+      }
+      while(i<30)
+
+               document.write("<br> Hello I am additation="+sum)
+
+
+//Switch function
+
+var word = prompt("Enter any word..");
+
+    var word= word.toLowerCase(); //use two variable same and type  var.convert();
+
+switch (word) {
+     case 'a':
+
+          case 'e':
+
+               case 'i':
+
+                    case 'o':
+
+                         case 'u':
+           document.write("Vowel");
+          break;
+
+
+
+     default:
+          document.write("Consonant");
+}
+document.write("<br></br><br></br>")
+//error function
+
+var i = 23;
+
+try {
+     if(i<47)
+     {
+          document.write("This is valid.");
+     }
+
+} catch (error) {
+
+    throw  "This is not valid..";
+
+}
+document.write("<br></br><br></br>")
+//Break statement
+//var c =0;
+for(i=1; i<=100; i++){
+
+
+     if(i==23){
+          break;
+     }
+    // v = c+i;
+
+     document.write("<br>" + i);
+
+}
+
+document.write("End");
+//document.write("Add="+v);
+document.write("<br></br><br></br>")
+//Continue statement : + by use for Loop
+for(i=0; i<=100; i++)
+{
+
+     if(i%2!=0){
+          continue;
+     }
+       document.write("<br>" +i);
+}
+
+document.write("<br></br><br></br>")
+//Keypress function
+var count=0;
+
+document.getElementById("text").addEventListener("keypress", function(){
+
+count++;
+       document.getElementById("i").innerHTML="You are type="+count+ "words";
+
+});
+
+//keyboard add
+
+  document. addEventListener("keypress" , function(event){
+
+     var text= event.key;
+
+     document.querySelector("p").innerHTML=text;
+});
+
+
+//js---->
+
+//Switch function
+
+var word = prompt("Enter any word..");
+
+    var word= word.toLowerCase(); //use two variable same and type  var.convert();
+
+switch (word) {
+     case 'a':
+
+          case 'e':
+
+               case 'i':
+
+                    case 'o':
+
+                         case 'u':
+           document.write("Vowel");
+          break;
+
+
+
+     default:
+          document.write("Consonant");
+}
+document.write("<br></br><br></br>")
+//error function
+
+var i = 23;
+
+try {
+     if(i<47)
+     {
+          document.write("This is valid.");
+     }
+
+} catch (error) {
+
+    throw  "This is not valid..";
+
+}
+document.write("<br></br><br></br>")
+//Break statement
+//var c =0;
+for(i=1; i<=100; i++){
+
+
+     if(i==23){
+          break;
+     }
+    // v = c+i;
+
+     document.write("<br>" + i);
+
+}
+
+document.write("End");
+//document.write("Add="+v);
+document.write("<br></br><br></br>")
+//Continue statement : + by use for Loop
+for(i=0; i<=100; i++)
+{
+
+     if(i%2!=0){
+          continue;
+     }
+       document.write("<br>" +i);
+}
+
+document.write("<br></br><br></br>")
+//Keypress function
+var count=0;
+
+document.getElementById("text").addEventListener("keypress", function(){
+
+count++;
+       document.getElementById("i").innerHTML="You are type="+count+ "words";
+
+});
+
+//keyboard add
+
+  document. addEventListener("keypress" , function(event){
+
+     var text= event.key;
+
+     document.querySelector("p").innerHTML=text;
+});
+
+//use stric
+/*
+"use strict"
+function message(text){
+
+     document.write('$  {text}' )
+
+}
+message("Hello ");
+*/
+"use strict"
+function bn(text){
+
+ console.log ('$ {text}' )
+
+}
+bn("Hello ");
+//
+/*
+function addNumbers(x,y,z){
+      return x+y+z;
+}
+
+let numbers =[1,2,3];
+
+let numbers1 = [4,5,...numbers]
+
+console.log(numbers1);
+*/
+function addNumbers(x,y,z){
+return x+y+z;
+}
+
+let num1 = [3,4,6]
+
+let num2 = [3,5,...num1]
+let numbers=num1.concat(num2);
+//let num4 = num2.concat[num3]
+
+//console.log(num3);
+
+document.write(numbers);
+
+function addNumbers(x,y,z){
+     return x+y+z;
+}
+let num5 = [1,2,3]
+let num6 = [5,6,...num1]
+
+let num8 = {...num5, ...num6}
+
+console.log(num8);
+
+//spread sheet not:...value,  {} par pass ret
+
+let p1 ={
+     Name: 'Subrota',
+     Age: 20
+}
+let p2 = {
+     Class:'BSc',
+      Interest:'Programe',
+          Country: 'Bangladesh'
+
+}
+let p3 = {
+     Gender:'Male',
+     College:'TMS'
+}
+
+let p = {...p1,...p2,...p3}
+
+      console.log(p);
+      //Es6
+
+function std(name,age,GPA){
+     return {
+          name,
+          age,
+          GPA
+     }
+}
+
+console.log(std( 'subrota', 20,4.08));
+//Object function
+let ob= {
+     object: function()
+     {
+          return 'Hello i am object  function...';
+     }
+}
+console.log(ob.object()); //Callback
+
+let es6 = {
+     'body'(){
+          return "I am obj without function..";
+     }
+}
+     console.log(es6['body']());
+/*
+     let s  ={
+          'sub'(){
+               return 'Hello Diposh dada...';
+          }
+     }
+console.log(s['sub'] ()); // callback
+*/
+/*
+  var mark = parseInt(prompt("Enter your mark"));
+   if(mark>100|| mark<0)
+     console.log("This is Invalid");
+
+        else if(mark>=80)
+
+           console.log("You have got = A+");
+           else if(mark>=70)
+
+           console.log("You have got = A");
+           else if(mark>=60)
+
+           console.log("You have got = A-");
+           else if(mark>=50)
+
+           console.log("You have got = B");
+           else if(mark>=45)
+
+           console.log("You have got = C");
+           else if(mark>=33)
+
+           console.log("You have got = D");
+
+
+        else
+         console.log('You have been Fail ');
+         */
+         var x =  10;
+         var myInterval = setInterval(function() {
+              x+=10;
+
+                 document.getElementById("demo2").innerHTML=x;
+
+         }, 2000);
+
+
+
+         //function stopInterval(){
+           //  clearInterval(myInterval);
+
+          //Guessing Game....>
+/*
+          var lostNumber =0;
+          var wonNumber =0;
+
+          for(i=1; i<8; i++){
+
+               var gusseingNumber = parseInt(prompt("Enter the number between 1 to 8"));
+                          var randomNumber = Math.floor(Math.random()*8)+1;
+
+                           if(gusseingNumber==randomNumber){
+            document.write("You have won=" +wonNumber  +"<br><br>");
+          wonNumber++;
+
+                               }
+
+                                        else {
+
+                                             document.write("You have lost the random number was="  +randomNumber+ "<br><br>");
+                                                     lostNumber++;
+                                        }
+
+                                 }
+
+                                 document.write("You have lost for =" +lostNumber+ "<br><br>" )  ;
+                                       document.write("You have won for  = " +wonNumber + "<br>");
+ */
+
+              var points = [3,8,7,4,2,12,13,10,9];
+
+            document.getElementById("demo45").points =3,8,7,4,2,12,13,10,9;
+
+     function myFunc(){
+          points.sort();
+               document.getElementById("demo45").innerHTML=points;
+                    points.reverse();
+          }
+
+
+          var i =5;
+
+          var sum = 0;
+
+          while(i<23)
+          {
+               document.write(i+ "<br>");
+
+               i++;
+
+               sum = sum + i;
+          }
+
+          document.write("The while loop additation ="+sum + "<br><br>");
+
+          var i =5;
+
+          var sum = 0;
+
+
+          do{
+               document.write(i+ "<br>");
+
+               i++;
+
+               sum = sum + i;
+          }     while(i<23)
+
+          document.write("The while loop additation ="+sum + "<br><br>");
+     //i=index; i<lentgh;i++
+    var  math = 0;
+for(i=1; i<45; i++){
+     document.write( i + "<br>");
+     mat = math+i;
+}
+document.write("My for loop add="+mat);
+
+
+
+for(a=0; a<=67; a++){
+     if(a==20){
+          break;
+     }
+     document.write(a+"<br>") //inserte here....>
+
+}
+
+
+for(a=0; a<=67; a++){
+     if(a==0){
+       continue;
+     }
+     document.write(a+"<br>") //inserte here....>
+
+}
+
+
+for(a=0; a<=67; a++){
+     if(a%2!=0){
+       continue;
+     }
+     document.write(a+"<br>") //inserte here....>
+
+}
+
+let data =()=>{
+     console.log("Data Loading");
+}
+   let task1 = (callback) =>{
+        console.log("Harry");
+          setTimeout(data,000);
+   callback();
+     }
+
+   let task2 = (callback) =>{
+     console.log("Alex");
+ callback();
+}
+
+let task3 = (callback) =>{
+     console.log("David");
+ callback();
+}
+let task4 = (callback) =>{
+  console.log("William");
+callback();
+}
+let task5 = (callback) =>{
+  console.log("Json");
+callback();
+}
+let task6 = (callback) =>{
+  console.log("Nikki");
+callback();
+}
+let task7 = (callback) =>{
+  console.log("Kipria");
+callback();
+}
+let task8 = (callback) =>{
+  console.log("Adam");
+callback();
+}
+let task9 = (callback) =>{
+  console.log("Admon");
+callback();
+}
+let task10 = (callback) =>{
+  console.log("Smith");
+callback();
+}
+let task11 = (callback) =>{
+  console.log("Gail");
+callback();
+}
+
+          
+     //...JS E N D ... ..//
+     .....>
+     </script>     
+
+
+     
+     
+<?php
+
+$user = 'root';
+$password = ''; //To be completed if you have set a password to root
+$database = 'Emulation'; //To be completed to connect to a database. The database must exist.
+$port = NULL; //Default must be NULL to use default port
+$mysqli = new mysqli('127.0.0.1', $user, $password, $database, $port);
+
+if ($mysqli->connect_error) {
+    die('Connect Error (' . $mysqli->connect_errno . ') '
+            . $mysqli->connect_error);
+}
+echo '<p>Connection OK '. $mysqli->host_info.'</p>';
+echo '<p>Server '.$mysqli->server_info.'</p>';
+echo '<p>Initial charset: '.$mysqli->character_set_name().'</p>';
+
+$sql="insert into php3 values('M34W65' , 'kL90fg56')";
+$query = mysqli_query ($mysqli,$sql);
+if($query)
+  echo "<i>Database insert successfull....</i>";
+$mysqli->close();
+
+?>
+form connect....
+<br><br>
+     <form class="w-50 m-auto was-validated" id="p" method="GET" tion="form.php" style="background-color: aqua; color: blueviolet; font-size:x-large ;">
+          <div class="form-group">
+               <label for="Name">Nmae</label>
+                    <input type="text" class="form-control"  name="username" placeholder="username" required/>
+
+                    <div class="valid-feedback">Valid Info</div>
+                    <div class="invalid-feedback">Insert your valid info.</div>
+               </div>
+<div class="form-group">
+
+     Password :<input type="password" class="form-control " name="password" placeholder="password" required/>
+     <div class="valid-feedback">Valid Info</div>
+     <div class="invalid-feedback">Insert your valid info.</div>
+</div>
+<br><br>
+     Submit:<input type="submit"class="form-control m-aut" value="Log in"/>
+</form>
+
+//php
+
+
+<?php
+/*
+
+   <Form name="form1" action="submitForm.php" Method="POST">
+<INPUT TYPE="TEXT" VALUE="username"
+Name="username">
+<INPUT TYPE="Submit" Name="Submit1">
+   </FORM>
+
+$username= $_POST['username'];
+
+if($username== "letmein")
+{
+
+print("Welcome back friend");
+}
+
+else{
+     print("You are not a member of this site");
+}
+
+*/
+
+
+if(!empty($username)){
+   if(!empty($password)){
+
+      $host= "localhost";
+      $dbusername = "root";
+      $dbpassword = "";
+      $dbname = "Emulation"; //db name//
+//sql connect  .......>
+      $conn = new mysqli ("$host" , "$dbusername "  , "$dbpassword" , "$dbname");
+
+      if(mysqli_connect_error())
+      {
+           die("Connect error ('.mysqli_connect_error.'())"
+           .mysql_connect_error());
+      }
+      else{
+           $sql = "INSERT INTO   type values  ('$dbusername' , '$dbpassword') "; //mistake here//
+           if ($conn->query ($sql)) {
+                echo "Succussfully Log in";
+           }
+           else {
+                echo "Error :". $sql ."<br><br>" .$conn->error ;
+           }
+           $conn->close();
+
+
+   }
+
+
+  // else{
+      echo "insert your password";
+      die();
+}
+
+
+}
+
+else{
+   echo "insert your name";
+   die();
+}
+
+?>
+
+<?php
+/*
+* Change the value of $password if you have set a password on the root userid
+* Change NULL to port number to use DBMS other than the default using port 3306
+*
+*/
+$user = 'root';
+$password = ''; //To be completed if you have set a password to root
+$database = 'post'; //To be completed to connect to a database. The database must exist.
+$port = NULL; //Default must be NULL to use default port
+$mysqli = new mysqli('127.0.0.1', $user, $password, $database, $port);
+
+if ($mysqli->connect_error) {
+    die('Connect Error (' . $mysqli->connect_errno . ') '
+            . $mysqli->connect_error);
+}
+echo '<p>Connection OK '. $mysqli->host_info.'</p>';
+echo '<p>Server '.$mysqli->server_info.'</p>';
+echo '<p>Initial charset: '.$mysqli->character_set_name().'</p>';
+$sql= insert into type(id,password,email) values(23,su97561878,subrot45278@gmail.com);
+$query = mysqli_query ($mysqli,$sql);
+if($query)
+  echo "Database insert ss";
+$mysqli->close();
+
+//echo "<form action="file:///C:/Users/user/Desktop/My%20Java%20Program/Bangladesh%20and%20my%20website.html">";
+echo "<form>";
+    echo "<br><br>";
+echo "Name";
+echo "<br><br>";
+echo '<input type="name"/>';
+echo "<br><br>";
+echo "Password";
+echo "<br><br>";
+echo '<input type="password"/>';
+echo "<br><br>";
+echo "Number";
+echo "<br><br>";
+echo '<input type="number"/>';
+echo "<br><br>";
+//echo 'Submit';
+echo "<br><br>";
+echo '<input type="submit" value="Submit" /> ';
+echo "</form>";
+
+?>
+
+<.......
+     
+     
+     
+     ?>
+</body>
+</html>
